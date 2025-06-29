@@ -1,6 +1,6 @@
 import Title from "../../components/title/Title";
 import teamBanner from '../../assets/images/team/brown-fsae-running-photo.jpg';
-import headshotSample from '../../assets/images/team/headshot-sample.jpg';
+import headshotSample from '../../assets/images/team/headshot-sample.JPG';
 import HeadshotSection from "../../components/headshot-section/HeadshotSection";
 
 export default function Team(){
