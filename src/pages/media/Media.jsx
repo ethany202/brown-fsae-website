@@ -1,7 +1,7 @@
-import Title from "../../components/title/Title";
+import Title from "../../components/title/Title.jsx";
 import mediaBanner from '../../assets/images/media/brown-fsae-media-photo.jpg';
 import season2425Thumbnail from '../../assets/images/media/24-25-thumbnail.jpg';
-import SeasonalPhotos from "../../components/seasonal-photos/SeasonalPhotos";
+import SeasonalPhotos from "../../components/seasonal-photos/SeasonalPhotos.jsx";
 
 export default function Media(){
 

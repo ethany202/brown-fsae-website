@@ -5,8 +5,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import tempPhoto from '../../assets/images/subsystems/brown-subsystem-banner.jpg';
 import otherPhoto from '../../assets/images/home/brown-fsae-car-front-view.jpg';
-import SubsystemBlock from '../../components/subsystem-block/SubsystemBlock';
-import Title from '../../components/title/Title';
+import SubsystemBlock from '../../components/subsystem-block/SubsystemBlock.jsx';
+import Title from '../../components/title/Title.jsx';
 
 export default function Subsystems(){
 

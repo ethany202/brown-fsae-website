@@ -7,8 +7,8 @@ import "slick-carousel/slick/slick-theme.css";
 import groupPhoto from '../../assets/images/home/group-photo.jpg';
 import liftingPhoto from '../../assets/images/home/lifting-photo.jpg';
 import seniorsPhoto from '../../assets/images/home/seniors-photo.jpg';
-import EventPlacements from "../../components/event-placements/EventPlacements";
-import Title from "../../components/title/Title";
+import EventPlacements from "../../components/event-placements/EventPlacements.jsx";
+import Title from "../../components/title/Title.jsx";
 
 export default function Home(){
 

@@ -1,7 +1,7 @@
-import Title from "../../components/title/Title";
+import Title from "../../components/title/Title.jsx";
 import teamBanner from '../../assets/images/team/brown-fsae-running-photo.jpg';
 import headshotSample from '../../assets/images/team/headshot-sample.JPG';
-import HeadshotSection from "../../components/headshot-section/HeadshotSection";
+import HeadshotSection from "../../components/headshot-section/HeadshotSection.jsx";
 
 export default function Team(){
 

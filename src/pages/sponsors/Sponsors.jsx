@@ -1,4 +1,4 @@
-import Title from "../../components/title/Title";
+import Title from "../../components/title/Title.jsx";
 import sponsorsBanner from '../../assets/images/sponsors/brown-fsae-sponsors.jpg';
 import './Sponsors.css';
 

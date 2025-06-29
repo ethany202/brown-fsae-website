@@ -1,4 +1,4 @@
-import Headshot from "../Headshot/Headshot";
+import Headshot from "../Headshot/Headshot.jsx";
 
 export default function HeadshotSection({sectionName, headshotData}){
     return (

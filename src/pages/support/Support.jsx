@@ -1,4 +1,4 @@
-import Title from "../../components/title/Title";
+import Title from "../../components/title/Title.jsx";
 import supportBanner from '../../assets/images/support/brown-fsae-support.jpg';
 import supportSign from '../../assets/images/support/brown-fsae-support-sign.jpg';
 import './Support.css';

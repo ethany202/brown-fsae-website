@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import PageBase from "../../components/base/PageBase";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
+import PageBase from "../../components/base/PageBase.jsx";
+import Navbar from "../../components/navbar/Navbar.jsx";
+import Footer from "../../components/footer/Footer.jsx";
 
 
 export default function Layout(){
