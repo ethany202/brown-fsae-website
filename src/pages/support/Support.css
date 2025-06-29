@@ -1,0 +1,11 @@
+.fundraising-steps li{
+    font-size: 1.15rem;
+}
+
+.fundraising-steps a{
+    color: #C00404;
+}
+
+.fundraising-steps a:hover{
+    opacity: 0.75;
+}

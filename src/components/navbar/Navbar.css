@@ -1,0 +1,12 @@
+.navbar-item{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.navbar-item:hover{
+    color: #C00404;
+}
+
+.navbar-wrapper{
+    background-color: black;
+}
