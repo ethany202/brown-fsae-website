@@ -3,7 +3,7 @@ import './index.css'
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from './pages/home/Home.jsx';
 import Layout from "./pages/layout/Layout.jsx";
-import Subsystems from "./pages/subsystems/Subsystems.jsx";
+import Subteams from "./pages/subteams/Subteams.jsx";
 import Team from "./pages/team/Team.jsx";
 import Media from "./pages/media/Media.jsx";
 import Support from "./pages/support/Support.jsx";
@@ -20,8 +20,8 @@ const router = createBrowserRouter([
         element: <Home/>
       },
       {
-        path: "/subsystems",
-        element: <Subsystems/>
+        path: "/subteams",
+        element: <Subteams/>
       },
       {
         path: "/team",
