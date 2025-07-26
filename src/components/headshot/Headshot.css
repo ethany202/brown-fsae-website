@@ -1,0 +1,13 @@
+.member-email {
+    color: #C00404;
+    font-family: 'SpaceGrotesk-Bold';
+}
+
+.member-email:hover{
+    color: #C00404;
+    opacity: 0.85;
+}
+
+.member-email:visited{
+    color: #C00404;
+}

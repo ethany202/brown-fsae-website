@@ -1,4 +1,4 @@
-
+import './Headshot.css';
 
 export default function Headshot({photoRef, name, subsystem, email}){
 
@@ -7,7 +7,7 @@ export default function Headshot({photoRef, name, subsystem, email}){
             <img src={photoRef}/>
             <p className="pt-1 text-[#C00404] font-[SpaceGrotesk-Bold]">{name}</p>
             <p>{subsystem}</p>
-            <a href={`mailto:${email}`}>{email}</a>
+            <a href={`mailto:${email}`} className="member-email">{email}</a>
         </div>
     )
 }

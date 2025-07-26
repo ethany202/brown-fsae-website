@@ -40,6 +40,23 @@ export default function Home(){
                     </p>
                 </div>
 
+                <div className="flex flex-col py-8 w-full">
+                    <h1 className="py-4 bg-[#a300008a] w-full flex flex-col items-center justify-center font-[SpaceGrotesk-Bold]">What Would You Learn?</h1>
+                    <div className="learn-section py-4 grid grid-cols-2">
+                        <ul className="list-disc list-inside space-y-2 p-6">
+                            <li>Machining metal components</li>
+                            <li>Welding</li>
+                            <li>Computer aided design (CAD)</li>
+                        </ul>
+                        <ul className="list-disc list-inside space-y-2 p-6">
+                            <li>Computer simulation</li>
+                            <li>Carbon fiber fabrication</li>
+                            <li>General design and testing</li>
+                        </ul>
+                    </div>
+
+                </div>
+
                 <div className="flex flex-col items-center justify-center py-4">
                     <h1 className="car-name py-4">Rhode Runner (P18)</h1>
                     <Slider {...carouselSettings} className="w-full max-w-screen-lg mx-auto">
@@ -54,10 +71,15 @@ export default function Home(){
                     <EventPlacements/>
                     <div className="py-8">
                         <p>
-                            Under our most recent showing at FSAE Michigan 2025, we placed top 20 overall (18th place)
-                            out of 120 university teams. This includes a top 5 finish in the Cost event and a top 10 finish in Endurance.
-                            Our performance is a remarkable feat and one to leave in the history books of Brown Formula Racing, as we pursue even 
-                            greater achievements in the near future.
+                            Rhode Runner marks the first step in the new era for Brown Formula Racing. At just 
+                            <strong className="font-[SpaceGrotesk-Bold]"> 200 kilograms </strong> 
+                            - 33 kg lighter than its predecessor - Rhode Runner is the result of over a year of focused design, iteration, and validation. 
+                            Nearly every subsystem was overhauled and freshly manufactured in-house, including a 
+                            <strong className="font-[SpaceGrotesk-Bold]"> custom CP1 titanium exhaust,  
+                            hollow clamshell airfoils, mode-decoupled front and rear suspension, and structural carbon fiber floor</strong>. 
+                            Placing 
+                            <strong className="font-[SpaceGrotesk-Bold]"> 18th overall, </strong> 
+                            Rhode Runner's performance ushers in a new era of Brown Formula Racing - with hardware on the horizon.
                         </p>
                     </div>
                 </div>

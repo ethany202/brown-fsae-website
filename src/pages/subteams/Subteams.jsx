@@ -2,8 +2,6 @@ import React from 'react';
 import subteamBanner from '../../assets/images/subteams/brown-subteam-banner.jpg';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import tempPhoto from '../../assets/images/subteams/brown-subteam-banner.jpg';
-import otherPhoto from '../../assets/images/home/brown-fsae-car-front-view.jpg';
 import SubteamBlock from '../../components/subteam-block/SubteamBlock.jsx';
 import Title from '../../components/title/Title.jsx';
 
@@ -51,7 +49,7 @@ export default function Subteams(){
 
     return (
         <>
-            <Title titlePhotoRef={subteamBanner} title={"Core Car Components"}/>
+            <Title titlePhotoRef={subteamBanner} title={"Core Subteams"}/>
 
             <div className="w-3/4">
                 <div className="py-8 flex flex-col">

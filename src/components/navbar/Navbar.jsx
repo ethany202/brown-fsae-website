@@ -6,8 +6,8 @@ export default function Navbar({}){
 
     const navigationItems = [
         { name: "Home", href: "/home", active: true },
-        { name: "Components", href: "/subteams" },
-        { name: "Team", href: "/team" },
+        { name: "Subteams", href: "/subteams" },
+        { name: "Our Team", href: "/team" },
         { name: "Sponsors", href: "/sponsors"},
         { name: "Support", href: "/support" },
         { name: "Media", href: "/media" },

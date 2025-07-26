@@ -19,6 +19,11 @@
     height: auto;
 }
 
+.learn-section li{
+    font-family: "SpaceGrotesk-SemiBold";
+    font-size: 1.4rem;
+}
+
 .car-name{
     font-family: "Morydane";
     font-size: 3.5rem;
