@@ -8,8 +8,9 @@ export default function Navbar({}){
         { name: "Home", href: "/home", active: true },
         { name: "Subteams", href: "/subteams" },
         { name: "Our Team", href: "/team" },
+        { name: "Cars", href: "/cars"},
         { name: "Sponsors", href: "/sponsors"},
-        { name: "Support", href: "/support" },
+        // { name: "Support", href: "/support" },
         { name: "Media", href: "/media" },
         { name: "Contact Us", href: "/contact-us" },
     ]

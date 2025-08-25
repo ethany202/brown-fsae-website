@@ -3,6 +3,9 @@ import supportBanner from '../../assets/images/support/brown-fsae-support.jpg';
 import supportSign from '../../assets/images/support/brown-fsae-support-sign.jpg';
 import './Support.css';
 
+/**
+ * NOT included in the TABS section anymore (migrated to /sponsors)
+ */
 export default function Support(){
     return (
         <>

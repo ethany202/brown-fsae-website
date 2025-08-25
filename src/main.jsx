@@ -9,6 +9,7 @@ import Media from "./pages/media/Media.jsx";
 import Support from "./pages/support/Support.jsx";
 import Sponsors from "./pages/sponsors/Sponsors.jsx";
 import ContactUs from "./pages/contact-us/ContactUs.jsx";
+import Cars from "./pages/cars/Cars.jsx";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path: "/team",
         element: <Team/>
+      },
+      {
+        path: "/cars",
+        element: <Cars/>
       },
       {
         path: "/media",

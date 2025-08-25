@@ -5,19 +5,6 @@ import SeasonalPhotos from "../../components/seasonal-photos/SeasonalPhotos.jsx"
 
 export default function Media(){
 
-    const seasonalPhotos = [
-        {
-            year: "2024-25 Photo Album",
-            thumbnail: season2425Thumbnail,
-            albumRef: "https://photos.google.com/share/AF1QipOW2HhxKhoxFbaj_85HUmvW5TGrXnxZo5jYFQkosleVImezNq9EGPMJPRyKT0859g?key=dHR6XzJKV1drSXhid0R5NEhaYTBySVU0RDUwVTRB"
-        },
-        {
-            year: "2023-24 Photo Album",
-            thumbnail: season2425Thumbnail,
-            albumRef: "https://photos.google.com/share/AF1QipOW2HhxKhoxFbaj_85HUmvW5TGrXnxZo5jYFQkosleVImezNq9EGPMJPRyKT0859g?key=dHR6XzJKV1drSXhid0R5NEhaYTBySVU0RDUwVTRB"
-        }
-    ]
-
     return (
         <>
             <Title titlePhotoRef={mediaBanner} title={"Media"}/>
@@ -31,19 +18,6 @@ export default function Media(){
                         className="w-full h-full"
                         allowFullScreen
                         />
-                </div>
-
-                <div className="album-media py-8 grid grid-cols-2 gap-16 w-3/4">
-                    {seasonalPhotos.map((albumData, idx) => {
-                        return (
-                            <SeasonalPhotos
-                                year={albumData.year}
-                                thumbnail={albumData.thumbnail}
-                                albumRef={albumData.albumRef}
-                                key={idx}
-                                />
-                        )
-                    })}
                 </div>
             </div>
             
