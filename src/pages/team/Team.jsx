@@ -26,7 +26,7 @@ const captainsMetadata = {
         {
             file: "sophia.jpg",
             name: "Sophia Yim",
-            subsystem: "Suspension",
+            subsystem: "Captain",
             email: "sophia_yim@brown.edu"
         }
     ]
@@ -41,105 +41,39 @@ const structuresLeadsMetadata = {
             email: "hailey_stone@brown.edu"
         },
         {
-            file: "sophia.jpg",
-            name: "Sophia Yim",
-            subsystem: "Suspension",
-            email: "sophia_yim@brown.edu"
-        },
-        {
             file: "karunmay.jpg",
             name: "Karunmay Aggarwal",
-            subsystem: "Aerodynamics",
+            subsystem: "Suspension",
             email: "karunmay_aggarwal@brown.edu"
-        },
-        {
-            file: "rehaan.jpg",
-            name: "Rehaan Irani",
-            subsystem: "Pedalbox",
-            email: "rehaan_irani@brown.edu"
         },
         {
             file: "ethan.jpg",
             name: "Ethan Ye",
-            subsystem: "Steering",
+            subsystem: "Suspension",
             email: "ethan_ye@brown.edu"
         },
-        {
-            file: "hailey.jpg",
-            name: "Hailey Stone",
-            subsystem: "Brakes",
-            email: "hailey_stone@brown.edu"
-        }
     ]
 }
 
 const powertrainLeadsMetadata = {
     headshotData: [
         {
-            file: "carmelo.jpg", 
-            name: "Carmelo Santoro", 
-            subsystem: "Engine and Fuel",
-            email: "claudio_santoro@brown.edu" 
-        },
-        {
             file: "luke.jpg",
             name: "Luke Rhoads",
-            subsystem: "Intake and Dyno",
+            subsystem: "Powertrain",
             email: "luke_rhoads@brown.edu"
-        },
-        {
-            file: "celina.jpg",
-            name: "Celina Bao",
-            subsystem: "Exhaust",
-            email: "baihe_bao@brown.edu"
         },
         {
             file: "baurice.jpg",
             name: "Baurice Kovatchev",
-            subsystem: "Drivetrain",
+            subsystem: "Electronics",
             email: "baurice_kovatchev@brown.edu"
         },
-        {
-            file: "taohan.jpg",
-            name: "Taohan Wang",
-            subsystem: "Cooling",
-            email: "taohan_wang@brown.edu"
-        },
-        {
-            file: "ibrahim.JPG",
-            name: "Ibrahim Mohammed",
-            subsystem: "Shifting",
-            email: "ibrahim_mohammed@brown.edu"
-        }
     ]
 }
 
 const integrationLeadsMetadata = {
     headshotData: [
-        {
-            file: "jay.jpg", 
-            name: "Electronics", 
-            subsystem: "Jay O'Neill",
-            email: "jay_j_oneill@brown.edu" 
-        },
-        {
-            file: "ricky.JPG",
-            name: "Eletronics",
-            subsystem: "Ricky Ellison",
-            email: "cedric_ellison@brown.edu"
-        },
-        {
-            file: "chandler.jpg",
-            name: "Leela Young",
-            subsystem: "Ergonomics",
-            email: "leela_young@brown.edu"
-        },
-        {
-            file: "emelyn.jpg",
-            name: "Emelyn Madrigal",
-            subsystem: "Driver Interface",
-            email: "emelyn_madrigal@brown.edu"
-        }
     ]
 }
 
