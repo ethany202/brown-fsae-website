@@ -12,22 +12,22 @@ const captainsMetadata = {
     headshotData: [
         {
             // photoRef: jackHeadshot, 
-            file: "jack.jpg",
-            name: "Jack Kolman", 
+            file: "lake.jpg",
+            name: "Lake Gifford", 
             subsystem: "Captain",
-            email: "jack_kolman@brown.edu"
+            email: "patience_gifford@brown.edu"
         },
         {
-            file: "chandler.jpg",
-            name: "Chandler Zhu", 
+            file: "carmelo.jpg", 
+            name: "Carmelo Santoro", 
             subsystem: "Captain",
-            email: "chandler_zhu@brown.edu"
+            email: "claudio_santoro@brown.edu" 
         },
         {
-            file: "tristan.jpg",
-            name: "Tristan Keyser-Parker", 
-            subsystem: "Captain",
-            email: "tristan_keyser-parker@brown.edu"
+            file: "sophia.jpg",
+            name: "Sophia Yim",
+            subsystem: "Suspension",
+            email: "sophia_yim@brown.edu"
         }
     ]
 }
@@ -35,10 +35,10 @@ const captainsMetadata = {
 const structuresLeadsMetadata = {
     headshotData: [
         {
-            file: "lake.jpg",
-            name: "Lake Gifford", 
+            file: "hailey.jpg",
+            name: "Hailey Stone",
             subsystem: "Chassis",
-            email: "patience_gifford@brown.edu" 
+            email: "hailey_stone@brown.edu"
         },
         {
             file: "sophia.jpg",
