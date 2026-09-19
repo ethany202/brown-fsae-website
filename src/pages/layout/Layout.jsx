@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import PageBase from "../../components/base/PageBase.jsx";
 import Navbar from "../../components/navbar/Navbar.jsx";
 import Footer from "../../components/footer/Footer.jsx";
@@ -12,6 +12,7 @@ export default function Layout(){
                 <Outlet/>
             </div>
             <Footer/>
+            <ScrollRestoration/>
         </PageBase>
     )
 }

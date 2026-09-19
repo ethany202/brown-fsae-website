@@ -1,5 +1,7 @@
-.icon-row img:hover{
-    cursor: pointer;
-    opacity: 0.75;
+.footer-link, .footer-link:hover{
+    color: white;
 }
 
+.footer-link:hover{
+    opacity: 0.75;
+}

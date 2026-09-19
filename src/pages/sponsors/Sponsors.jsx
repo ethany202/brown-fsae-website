@@ -14,11 +14,10 @@ export default function Sponsors(){
 
             <div className="w-full">
                 <div className="py-8 flex flex-col items-center justify-center">
-                    <h1 className="!text-5xl font-[SpaceGrotesk-Bold] text-[#C00404] py-4">Thank You Sponsors!</h1>
-                    {/* <p>
-                        Interested in becoming a sponsor? Get in touch with us at &nbsp;
-                        <a className="club-email" href={"mailto:fsae@brown.edu"}>fsae@brown.edu</a>
-                    </p> */}
+                    <h1 className="!text-3xl md:!text-5xl text-center font-[SpaceGrotesk-Bold] text-[#C00404] py-4">Thank You Sponsors!</h1>
+                    <p className="text-center px-4">
+                        None of this is possible without the companies and people who back us.
+                    </p>
                 </div>
             </div>
 
@@ -29,16 +28,35 @@ export default function Sponsors(){
                             <img
                                 src={sponsorLogo}
                                 key={idx}
-                                className="h-28 p-1"
+                                className="h-16 md:h-28 p-1"
+                                alt=""
+                                loading="lazy"
                                 />
                         )
                     })}
                 </div>
             </div>
 
-            <div className="w-3/4 py-16">
+            <div className="w-11/12 md:w-3/4 mt-10 md:mt-16 p-6 md:p-10 bg-[#a300008a] flex flex-col md:flex-row items-center justify-between gap-6">
+                <div>
+                    <h1 className="font-[Michroma-Regular] !text-2xl md:!text-3xl">Become a Sponsor</h1>
+                    <p className="pt-3">
+                        Help us build the next car. Check out our sponsorship packet, then reach out at{" "}
+                        <a className="text-white underline hover:opacity-75" href="mailto:fsae@brown.edu">fsae@brown.edu</a>.
+                    </p>
+                </div>
+                <a
+                    href="https://drive.google.com/file/d/1I1p8PShJSh6bA7oSDIciKJDj5RsNwDDp/view?usp=sharing"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="shrink-0 bg-white !text-black font-[SpaceGrotesk-Bold] px-6 py-3 hover:bg-black hover:!text-white transition-colors">
+                    Sponsorship Packet
+                </a>
+            </div>
+
+            <div className="w-11/12 md:w-3/4 py-10 md:py-16">
                 <h1 className="font-[Michroma-Regular]">Steps to Follow to Support BFR:</h1>
-                <ol className="fundraising-steps list-decimal list-inside space-y-2 p-6">
+                <ol className="fundraising-steps list-decimal list-inside space-y-2 py-4 md:p-6">
                     <li>Navigate to the fundraising &nbsp; 
                         <a href="https://bbis.advancement.brown.edu/BBPhenix/give-now?did=fe90510b-4d79-4f59-ac4b-debdda0f5d95">site</a>
                     </li>

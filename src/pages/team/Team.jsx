@@ -1,27 +1,22 @@
 import Title from "../../components/title/Title.jsx";
 import teamBanner from '../../assets/images/team/brown-fsae-team-photo.jpg';
-import headshotSample from '../../assets/images/team/headshot-sample.JPG';
 import HeadshotSection from "../../components/headshot-section/HeadshotSection.jsx";
-import chandlerHeadshot from '../../assets/images/team/headshots/chandler.jpg';
-import jackHeadshot from '../../assets/images/team/headshots/jack.jpg';
-import tristanHeadshot from '../../assets/images/team/headshots/tristan.jpg';
 
 const headshots = import.meta.glob('../../assets/images/team/headshots/*.{jpg,JPG}', { eager: true });
 
 const captainsMetadata = {
     headshotData: [
         {
-            // photoRef: jackHeadshot, 
             file: "lake.jpg",
-            name: "Lake Gifford", 
+            name: "Lake Gifford",
             subsystem: "Captain",
             email: "patience_gifford@brown.edu"
         },
         {
-            file: "carmelo.jpg", 
-            name: "Carmelo Santoro", 
+            file: "carmelo.jpg",
+            name: "Carmelo Santoro",
             subsystem: "Captain",
-            email: "claudio_santoro@brown.edu" 
+            email: "claudio_santoro@brown.edu"
         },
         {
             file: "sophia.jpg",
@@ -52,6 +47,102 @@ const structuresLeadsMetadata = {
             subsystem: "Suspension",
             email: "ethan_ye@brown.edu"
         },
+        {
+            file: "mariam.jpg",
+            name: "Mariam Sufi",
+            subsystem: "Suspension + Business",
+            email: "mariam_sufi@brown.edu"
+        },
+        {
+            file: "aksel.jpg",
+            name: "Aksel Salmi",
+            subsystem: "Suspension",
+            email: "aksel_salmi@brown.edu"
+        },
+        {
+            file: "henry.jpg",
+            name: "Henry Shattuck",
+            subsystem: "Aerodynamics",
+            email: "henry_shattuck@brown.edu"
+        },
+        {
+            file: "chase.jpg",
+            name: "Chase Brown",
+            subsystem: "Aerodynamics",
+            email: "chase_brown@brown.edu"
+        },
+        {
+            file: "grace.jpg",
+            name: "Grace Hong",
+            subsystem: "Pedalbox",
+            email: "grace_hong@brown.edu"
+        },
+        {
+            file: "luisa.jpg",
+            name: "Luisa Buss",
+            subsystem: "Brakes",
+            email: "luisa_buss@brown.edu"
+        },
+        {
+            file: "devon.jpg",
+            name: "Devon Ntiforo",
+            subsystem: "Composites",
+            email: "devon_ntiforo@brown.edu"
+        },
+        {
+            file: "pawel.jpg",
+            name: "Pawel Odziomek",
+            subsystem: "Composites",
+            email: "pawel_odziomek@brown.edu"
+        },
+        {
+            file: "esther.jpg",
+            name: "Esther Nam",
+            subsystem: "Steering",
+            email: "esther_nam@brown.edu"
+        },
+        {
+            file: "chiagoziem.jpg",
+            name: "Chiagoziem Ikeyi",
+            subsystem: "Steering",
+            email: "chiagoziem_ikeyi@brown.edu"
+        },
+        {
+            file: "natasha.jpg",
+            name: "Natasha Ng",
+            subsystem: "Ergonomics",
+            email: "natasha_ng@brown.edu"
+        },
+        {
+            file: "katelyn.jpg",
+            name: "Katelyn Guo",
+            subsystem: "Ergonomics",
+            email: "katelyn_guo@brown.edu"
+        },
+        {
+            file: "eshan.jpg",
+            name: "Eshan Alam",
+            subsystem: "Ergonomics",
+            email: "eshan_alam@brown.edu"
+        },
+        {
+            file: "diego.jpg",
+            name: "Diego Perez Saignac",
+            subsystem: "Welding",
+            email: "diego_perez_saignac@brown.edu"
+        },
+        {
+            file: "zachary.jpg",
+            name: "Zachary Yuan",
+            subsystem: "Vehicle Dynamics",
+            email: "zachary_yuan1@brown.edu"
+        },
+        {
+            file: "taohan.jpg",
+            name: "Taohan Wang",
+            subsystem: "Aerodynamics",
+            email: "taohan_wang@brown.edu"
+        }
     ]
 }
 
@@ -69,20 +160,51 @@ const powertrainLeadsMetadata = {
             subsystem: "Electronics",
             email: "baurice_kovatchev@brown.edu"
         },
+        {
+            file: "eduardo.jpg",
+            name: "Eduardo Martinez",
+            subsystem: "Cooling",
+            email: "eduardo_martinez@brown.edu"
+        },
+        {
+            file: "koray.jpg",
+            name: "Koray Kokturk",
+            subsystem: "Shifting + Intake",
+            email: "koray_kokturk@brown.edu"
+        },
+        {
+            file: "karen.jpg",
+            name: "Karen Zhang",
+            subsystem: "Exhaust",
+            email: "karen_m_zhang@brown.edu"
+        },
+        {
+            file: "isabella.jpg",
+            name: "Isabella Popescu",
+            subsystem: "Drivetrain",
+            email: "isabella_popescu@brown.edu"
+        },
+        {
+            file: "jodie.jpg",
+            name: "Jodie Yan",
+            subsystem: "Drivetrain",
+            email: "jodie_yan@brown.edu"
+        }
     ]
 }
 
-const integrationLeadsMetadata = {
-    headshotData: [
-    ]
-}
+// set to true once the new headshots are in
+const SHOW_PHOTOS = true;
+
+// returns null when no photo yet, headshot shows a placeholder
+const getPhoto = (file) => SHOW_PHOTOS && file ? headshots[`../../assets/images/team/headshots/${file}`]?.default ?? null : null;
 
 export default function Team(){    
 
     const captainsInfo = {
         headshotData: captainsMetadata.headshotData.map(captainMetadata => ({
             ...captainMetadata,
-            photoRef: headshots[`../../assets/images/team/headshots/${captainMetadata.file}`].default
+            photoRef: getPhoto(captainMetadata.file)
         }))
     };
 
@@ -91,175 +213,32 @@ export default function Team(){
             subsectionName: "Structures",
             headshotData: structuresLeadsMetadata.headshotData.map(leadMetadata => ({
                 ...leadMetadata,
-                photoRef: headshots[`../../assets/images/team/headshots/${leadMetadata.file}`].default
+                photoRef: getPhoto(leadMetadata.file)
             }))
         },
         {
             subsectionName: "Powertrain",
             headshotData: powertrainLeadsMetadata.headshotData.map(leadMetadata => ({
                 ...leadMetadata,
-                photoRef: headshots[`../../assets/images/team/headshots/${leadMetadata.file}`].default
-            }))
-        },
-        {
-            subsectionName: "Integration",
-            headshotData: integrationLeadsMetadata.headshotData.map(leadMetadata => ({
-                ...leadMetadata,
-                photoRef: headshots[`../../assets/images/team/headshots/${leadMetadata.file}`].default
+                photoRef: getPhoto(leadMetadata.file)
             }))
         },
     ]
 
-    // const captainsInfo = {
-    //     headshotData: [
-    //         {
-    //             photoRef: jackHeadshot, 
-    //             name: "Jack Kolman", 
-    //             subsystem: "Captain",
-    //             email: "jack_kolman@brown.edu"
-    //         },
-    //         {
-    //             photoRef: chandlerHeadshot, 
-    //             name: "Chandler Zhu", 
-    //             subsystem: "Captain",
-    //             email: "chandler_zhu@brown.edu"
-    //         },
-    //         {
-    //             photoRef: tristanHeadshot, 
-    //             name: "Tristan Keyser-Parker", 
-    //             subsystem: "Captain",
-    //             email: "tristan_keyser-parker@brown.edu"
-    //         }
-    //     ]
-    // }
-
-    // const subsystemLeadsInfo = [
-    //     {
-    //         subsectionName: "Structures",
-    //         headshotData: [
-    //             {
-    //                 photoRef: headshotSample, 
-    //                 name: "Lake Gifford", 
-    //                 subsystem: "Chassis",
-    //                 email: "patience_gifford@brown.edu" 
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Sophia Yim",
-    //                 subsystem: "Suspension",
-    //                 email: "sophia_yim@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Karunmay Aggarwal",
-    //                 subsystem: "Aerodynamics",
-    //                 email: "karunmay_aggarwal@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Rehaan Irani",
-    //                 subsystem: "Pedalbox",
-    //                 email: "rehaan_irani@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Ethan Ye",
-    //                 subsystem: "Steering",
-    //                 email: "ethan_ye@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Hailey Stone",
-    //                 subsystem: "Brakes",
-    //                 email: "hailey_stone@brown.edu"
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         subsectionName: "Powertrain",
-    //         headshotData: [
-    //             {
-    //                 photoRef: headshotSample, 
-    //                 name: "Carmelo Santoro", 
-    //                 subsystem: "Engine and Fuel",
-    //                 email: "claudio_santoro@brown.edu" 
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Luke Rhoads",
-    //                 subsystem: "Intake and Dyno",
-    //                 email: "luke_rhoads@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Celina Bao",
-    //                 subsystem: "Exhaust",
-    //                 email: "baihe_bao@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Baurice Kovatchev",
-    //                 subsystem: "Drivetrain",
-    //                 email: "baurice_kovatchev@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Taohan Wang",
-    //                 subsystem: "Cooling",
-    //                 email: "taohan_wang@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Ibrahim Mohammed",
-    //                 subsystem: "Shifting",
-    //                 email: "ibrahim_mohammed@brown.edu"
-    //             }
-    //         ]
-    //     },
-    //     {
-    //         subsectionName: "Integration",
-    //         headshotData: [
-    //             {
-    //                 photoRef: headshotSample, 
-    //                 name: "Electronics", 
-    //                 subsystem: "Jay O'Neill",
-    //                 email: "jay_j_oneill@brown.edu" 
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Eletronics",
-    //                 subsystem: "Ricky Ellison",
-    //                 email: "cedric_ellison@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Leela Young",
-    //                 subsystem: "Ergonomics",
-    //                 email: "leela_young@brown.edu"
-    //             },
-    //             {
-    //                 photoRef: headshotSample,
-    //                 name: "Emelyn Madrigal",
-    //                 subsystem: "Driver Interface",
-    //                 email: "emelyn_madrigal@brown.edu"
-    //             }
-    //         ]
-    //     }
-    // ]
 
 
     return (
         <>
             <Title titlePhotoRef={teamBanner} title={"Our Team"}/>
 
-            <div className="w-7/8">
+            <div className="w-11/12 md:w-7/8">
                 <div className="py-8 flex flex-col">         
-                    <h3 className="text-center text-5xl py-4 font-[Michroma-Regular]">Captains</h3>
+                    <h3 className="text-center text-3xl md:text-5xl py-4 font-[Michroma-Regular]">Captains</h3>
                     <HeadshotSection
                         headshotData={captainsInfo.headshotData}
                         />
 
-                    <h3 className="text-center text-5xl pt-4 pb-8 font-[Michroma-Regular]">Subsystem Leads</h3>
+                    <h3 className="text-center text-3xl md:text-5xl pt-4 pb-8 font-[Michroma-Regular]">Subsystem Leads</h3>
                     {subsystemLeadsInfo.map((subsection, idx) => {
                         return (
                             <HeadshotSection

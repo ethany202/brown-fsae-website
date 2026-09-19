@@ -8,23 +8,31 @@
 }
 
 .team-header{
-    font-size: 3rem;
-    line-height: 3.5rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
     font-family: "SpaceGrotesk-Bold";
-}
-
-.main-banner{
-    background: url('../../assets/images/brown-fsae-car-front-view.jpg');
-    width: 100%;
-    height: auto;
 }
 
 .learn-section li{
     font-family: "SpaceGrotesk-SemiBold";
-    font-size: 1.4rem;
+    font-size: 1.15rem;
 }
 
 .car-name{
     font-family: "Morydane";
-    font-size: 3.5rem;
+    font-size: 2.25rem;
+    text-align: center;
+}
+
+@media (min-width: 768px){
+    .team-header{
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+    .learn-section li{
+        font-size: 1.4rem;
+    }
+    .car-name{
+        font-size: 3.5rem;
+    }
 }

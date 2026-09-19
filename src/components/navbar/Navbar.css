@@ -10,3 +10,42 @@
 .navbar-wrapper{
     background-color: black;
 }
+
+.hamburger{
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    padding: 10px;
+    background: transparent;
+    border: none;
+}
+
+.hamburger:hover{
+    border: none;
+}
+
+.hamburger span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transition: transform 0.2s, opacity 0.2s;
+}
+
+.hamburger span.open:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger span.open:nth-child(2){
+    opacity: 0;
+}
+
+.hamburger span.open:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.navbar-item.active{
+    color: #C00404;
+}
