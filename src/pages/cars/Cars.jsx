@@ -42,15 +42,15 @@ export default function Cars(){
                 </div>
             </div>
 
-            <div className="flex flex-col items-center justify-center">
-                <div className="py-8 mb-4 w-11/12 md:w-full max-w-screen-lg">
+            <div className="w-full flex flex-col items-center justify-center">
+                <div className="py-8 mb-4 w-11/12 max-w-screen-lg min-w-0">
                     <Slider {...carouselSettings} className="w-full max-w-screen-lg mx-auto">
                         {cars.map((car) => {
                             return (
-                                <div key={car.year} className="px-4 relative">
-                                    <img src={car.photo} className="w-full" alt={`${car.name} (${car.year})`}/>
-                                    <div className="absolute top-3 left-7 md:top-10 md:left-10 flex items-center">
-                                        <p className="bg-black/50 py-1 px-4">{car.name} ({car.year})</p>
+                                <div key={car.year} className="md:px-4 relative">
+                                    <img src={car.photo} className="w-full aspect-[2/1] object-cover" alt={`${car.name} (${car.year})`}/>
+                                    <div className="absolute top-2 left-2 md:top-10 md:left-10 flex items-center">
+                                        <p className="bg-black/50 py-1 px-3 md:px-4 text-sm md:text-base">{car.name} ({car.year})</p>
                                     </div>
                                 </div>
                             )

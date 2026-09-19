@@ -100,16 +100,16 @@ h1{
   @apply text-[2rem] md:text-[2.5rem]
 }
 
-/* keep carousel arrows on screen on mobile */
+/* keep carousel arrows on screen on mobile, extra class beats slick-theme.css */
 @media (max-width: 767px) {
-  .slick-prev, .slick-next {
+  .slick-slider .slick-prev, .slick-slider .slick-next {
     z-index: 10;
   }
-  .slick-prev {
-    left: 22px;
+  .slick-slider .slick-prev {
+    left: 6px;
   }
-  .slick-next {
-    right: 22px;
+  .slick-slider .slick-next {
+    right: 6px;
   }
   .slick-prev:before, .slick-next:before {
     text-shadow: 0 0 6px rgba(0, 0, 0, 0.8);
